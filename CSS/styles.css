@@ -1,0 +1,42 @@
+body {
+  --scroll-position: 0;
+}
+
+body.scrolled {
+  --scroll-position: 100vh;
+}
+
+header {
+  display: block;
+  height: 50vh;
+}
+
+.section-logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 4vh;
+}
+.section-logo img {
+  width: 90%;
+  justify-content: center;
+}
+
+.section-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: top 0.3s ease-in-out;
+  top: calc(var(--scroll-position) - var(--navbar-height));
+}
+.section-navbar .navbar .lista-navbar {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  font-size: smaller;
+}
+
+/*# sourceMappingURL=styles.css.map */
