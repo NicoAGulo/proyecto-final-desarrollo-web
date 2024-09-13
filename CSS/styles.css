@@ -1,13 +1,5 @@
-body {
-  --scroll-position: 0;
-}
-
-body.scrolled {
-  --scroll-position: 100vh;
-}
-
 header {
-  display: block;
+  display: inline;
   height: 50vh;
 }
 
@@ -23,27 +15,29 @@ header {
 }
 
 .section-navbar {
-  width: 100%;
+  display: block;
   position: relative;
-  transition: top 0.3s ease-in-out;
+  width: 100%;
+  position: sticky;
+  top: 0;
 }
 .section-navbar .navbar {
-  position: relative;
+  position: block;
 }
 .section-navbar .navbar .lista-navbar {
   display: flex;
   justify-content: space-around;
-  height: 8vh;
+  align-items: center;
   list-style: none;
+  height: 10vh;
   margin: 0;
   padding: 0;
   font-size: 8px;
-  align-items: center;
 }
 .section-navbar .navbar .lista-navbar li {
   display: block;
-  width: 40px;
   text-align: center;
+  width: 14%;
 }
 
 /*# sourceMappingURL=styles.css.map */
