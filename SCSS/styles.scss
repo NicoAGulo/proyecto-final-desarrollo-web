@@ -24,21 +24,29 @@ header {
 }
 
 .section-navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
+    position: relative;
     transition: top 0.3s ease-in-out;
-    top: calc(var(--scroll-position) - var(--navbar-height));
 
     .navbar {
+        position: relative;
+
         .lista-navbar {
             display: flex;
-            list-style: none;
             justify-content: space-around;
+            height: 8vh;
+            list-style: none;
             margin: 0;
             padding: 0;
-            font-size: smaller;
+            font-size: 8px;
+            align-items: center;
+
+            li {
+                display: block;
+                width: 40px;
+                text-align: center;
+
+            }
         }
     }
 
