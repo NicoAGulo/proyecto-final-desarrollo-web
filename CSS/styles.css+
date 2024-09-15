@@ -12,12 +12,10 @@ header {
 .section-logo {
   display: flex;
   justify-content: center;
-  z-index: 999;
   width: 100%;
   margin-bottom: 4vh;
 }
 .section-logo img {
-  z-index: 999;
   margin-top: 1rem;
   width: 70%;
   justify-content: center;
@@ -63,7 +61,11 @@ header {
 .section-carousel {
   position: absolute;
   bottom: 0;
-  z-index: 0;
+}
+.section-carousel div.carousel-inner {
+  display: flex;
+  position: relative;
+  align-items: center;
 }
 
 main {
@@ -86,4 +88,4 @@ footer {
   bottom: 0;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.css+.map */
