@@ -93,27 +93,24 @@ header {
 
 
 .section-carousel {
-    position: absolute;
-    justify-content: center;
-    width: 100%;
-    padding: 20px;
+    width: 90vw;
     bottom: 0;
 
     div {
         position: relative;
         bottom: 0;
-        height: 60vh;
+        height: 50vh;
 
         img {
-            position: absolute;
+            position: relative;
             bottom: 0;
         }
     }
 }
 
 main {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    display: grid;
+    top: 0;
     height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
@@ -128,6 +125,10 @@ main {
     align-items: center;
 
     height: 100vh;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
     grid-template-columns: 6, 1fr;
     grid-template-rows: 6, 1fr;
     grid-column-gap: 0px;
@@ -140,7 +141,7 @@ main {
         position: relative;
         align-items: center;
         justify-content: center;
-        height: 8rem;
+        height: 25vh;
 
         img {
             display: flex;
@@ -172,7 +173,8 @@ main {
 footer {
     background-image: linear-gradient(to bottom, #f58220 0vh, white 100vh);
     display: block;
-    position: absolute;
+    position: relative;
+    top: 0;
     height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
