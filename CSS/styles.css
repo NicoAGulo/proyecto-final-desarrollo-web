@@ -7,28 +7,26 @@ header {
   height: 100vh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, transparent 15vh, black 50vh);
 }
 
 .section-logo {
   display: flex;
   justify-content: center;
-  z-index: 999;
   width: 100%;
   margin-bottom: 4vh;
 }
 .section-logo img {
-  z-index: 999;
-  margin-top: 1rem;
+  padding-top: 2.5rem;
   width: 70%;
   justify-content: center;
 }
 
 .section-navbar {
   display: block;
-  position: sticky;
+  position: relative;
   width: 100%;
-  z-index: 100;
-  top: 1rem;
 }
 .section-navbar .navbar .lista-navbar {
   display: flex;
@@ -60,19 +58,103 @@ header {
   padding-bottom: 1rem;
 }
 
+#item-inicio {
+  background-color: #f58220;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#item-menu {
+  background-color: #a86615;
+}
+
+#item-delivery {
+  background-color: #aa2e31;
+}
+
+#item-novedades {
+  background-color: #d7d1c4;
+}
+
+#item-nosotros {
+  background-color: #407dbf;
+}
+
+#item-contacto {
+  background-color: #4cb58e;
+}
+
 .section-carousel {
   position: absolute;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
   bottom: 0;
-  z-index: 0;
+}
+.section-carousel div {
+  position: relative;
+  bottom: 0;
+  height: 60vh;
+}
+.section-carousel div img {
+  position: absolute;
+  bottom: 0;
 }
 
 main {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   height: 100vh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
+  background-image: linear-gradient(to bottom, black 0vh, #f58220 100vh);
+}
+
+.menu-media {
+  display: grid;
+  position: relative;
+  align-items: center;
+  height: 100vh;
+  grid-template-columns: 6, 1fr;
+  grid-template-rows: 6, 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content: space-around;
+}
+.menu-media div {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+}
+.menu-media div img {
+  display: flex;
+  height: 5rem;
+}
+
+.div1 {
+  grid-area: 1/1/2/6;
+  background-color: #407dbf;
+}
+
+.div2 {
+  grid-area: 3/1/4/3;
+  background-color: #4cb58e;
+}
+
+.div3 {
+  grid-area: 3/4/4/6;
+  background-color: #a86615;
+}
+
+.div4 {
+  grid-area: 5/1/6/6;
+  background-color: #d7d1c4;
 }
 
 footer {
+  background-image: linear-gradient(to bottom, #f58220 0vh, white 100vh);
   display: block;
   position: absolute;
   height: 100vh;
