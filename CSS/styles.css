@@ -6,7 +6,6 @@ header {
   display: grid;
   height: 100vh;
   scroll-snap-align: start;
-  scroll-snap-stop: always;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr, 1fr, 1fr;
   grid-column-gap: 0px;
@@ -116,13 +115,12 @@ main {
   display: grid;
   top: 0;
   height: 100vh;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   background-image: linear-gradient(to bottom, black 0vh, #f58220 100vh);
 }
 
 .menu-media {
   display: grid;
+  scroll-snap-align: start;
   height: 100vh;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -201,7 +199,6 @@ main {
 footer section {
   background-image: linear-gradient(to bottom, #f58220 0vh, white 100vh);
   scroll-snap-align: start;
-  scroll-snap-stop: always;
   height: 100vh;
   width: 100%;
   padding-top: 1rem;
