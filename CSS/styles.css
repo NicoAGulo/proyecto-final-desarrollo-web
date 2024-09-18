@@ -124,80 +124,131 @@ main {
 .menu-media {
   display: grid;
   height: 100vh;
-  grid-template-columns: 5, 1fr;
-  grid-template-rows: 6, 1fr;
-  padding: 2rem;
-  gap: 2rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1rem;
+  padding: 1rem;
 }
-.menu-media div {
+.menu-media .div-simple {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
   border-radius: 20%;
 }
-.menu-media div a {
+.menu-media .div-simple a {
   position: absolute;
   height: 100%;
   width: 100%;
   border-radius: 20%;
   z-index: 999;
 }
-.menu-media div img {
+.menu-media .div-simple img {
   height: 6rem;
-  transform: rotate(0deg);
-  transition: 0.3s ease-in-out;
 }
 
 .div1 {
-  grid-area: 1/1/3/5;
+  grid-area: 1/1/3/7;
   background-color: #25d366;
 }
 
 .div2 {
-  grid-area: 3/1/5/3;
+  grid-area: 3/1/5/4;
   background-color: #f66603;
 }
 
 .div3 {
-  grid-area: 3/3/5/5;
+  grid-area: 3/4/5/7;
   background-color: #407dbf;
 }
 
 .div4 {
-  grid-area: 5/1/6/5;
-  display: flex;
+  grid-area: 5/1/7/7;
   background-color: #d7d1c4;
-  gap: 10%;
-}
-.div4 .logos-delivery {
-  visibility: hidden;
-  opacity: 0;
-}
-.div4:hover #logo-moto, .div4:active #logo-moto {
-  transform: rotate(-360deg);
-  opacity: 0;
-}
-.div4:hover .logos-delivery, .div4:active .logos-delivery {
-  transform: rotate(360deg);
-  opacity: 1;
-  visibility: visible;
 }
 
-footer {
-  background-image: linear-gradient(to bottom, #f58220 0vh, white 100vh);
-  display: block;
+#div4-sub {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#div4-sub a {
   position: relative;
-  top: 0;
-  height: 100vh;
+  height: auto;
+  width: auto;
+  z-index: 999;
+}
+#div4-sub #logo-moto {
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+#div4-sub .logos-delivery {
+  visibility: hidden;
+  transition: rotate(0deg) 0.4s ease-in-out;
+}
+#div4-sub:hover #logo-moto, #div4-sub:active #logo-moto {
+  transform: rotate(500deg);
+  opacity: 0;
+  height: 0rem;
+}
+#div4-sub:hover .logos-delivery, #div4-sub:active .logos-delivery {
+  visibility: visible;
+  transition: rotate(-360deg) 0.4s ease-in-out;
+}
+
+footer section {
+  background-image: linear-gradient(to bottom, #f58220 0vh, white 100vh);
   scroll-snap-align: start;
   scroll-snap-stop: always;
+  height: 100vh;
+  width: 100%;
+  padding-top: 1rem;
+  display: grid;
+  position: absolute;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 }
-
-.arrow-nav-home {
+footer section .div-iframe {
+  grid-area: 1/3/4/11;
+}
+footer section .div-iframe iframe {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+footer section .div-info {
+  grid-area: 5/3/9/11;
   display: flex;
-  justify-content: center;
-  bottom: 0;
+  justify-content: space-around;
+}
+footer section .div-info .span-bondi {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+}
+footer section .div-info .span-bondi ul {
+  display: block;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+footer section .div-info .span-bondi ul li {
+  text-align: center;
+  list-style-type: none;
+  height: auto;
+}
+footer section .div-info .span-bondi ul li p {
+  display: block;
+  position: relative;
+  width: 50%;
+  height: auto;
+}
+footer section p {
+  width: 100%;
+  text-align: center;
+  margin: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
