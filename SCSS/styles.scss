@@ -1,3 +1,6 @@
+@import "keyframes";
+@import "animations";
+
 html {
     scroll-snap-type: y mandatory;
 }
@@ -39,6 +42,7 @@ header {
 
         .logo-centro {
             grid-area: 1 / 2 / 2 / 3;
+
         }
 
         .logo-eco-1 {
@@ -79,6 +83,7 @@ header {
                 align-items: center;
                 text-align: center;
                 width: 15%;
+                z-index: 999;
 
                 a {
                     display: block;
@@ -95,33 +100,59 @@ header {
     background-color: #f58220;
     font-weight: 900;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    &:hover {
+        background-color: white;
+    }
 }
 
 #item-menu {
     background-color: #a86615;
+
+    &:hover {
+        background-color: white;
+    }
 }
 
 #item-delivery {
     background-color: #aa2e31;
+
+    &:hover {
+        background-color: white;
+    }
 }
 
 #item-novedades {
     background-color: #d7d1c4;
+
+    &:hover {
+        background-color: white;
+    }
 }
 
 #item-nosotros {
     background-color: #407dbf;
+
+    &:hover {
+        background-color: white;
+    }
 }
 
 #item-contacto {
     background-color: #4cb58e;
-}
 
+    &:hover {
+        background-color: white;
+    }
+}
 
 .section-carousel {
     grid-area: 3 / 1 / 3 / 1;
     display: grid;
     height: 100%;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
 
 
     #carouselExampleSlidesOnly {

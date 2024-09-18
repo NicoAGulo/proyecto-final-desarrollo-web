@@ -66,6 +66,7 @@ header {
   align-items: center;
   text-align: center;
   width: 15%;
+  z-index: 999;
 }
 .section-navbar .navbar .lista-navbar li a {
   display: block;
@@ -78,31 +79,51 @@ header {
   font-weight: 900;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+#item-inicio:hover {
+  background-color: white;
+}
 
 #item-menu {
   background-color: #a86615;
+}
+#item-menu:hover {
+  background-color: white;
 }
 
 #item-delivery {
   background-color: #aa2e31;
 }
+#item-delivery:hover {
+  background-color: white;
+}
 
 #item-novedades {
   background-color: #d7d1c4;
+}
+#item-novedades:hover {
+  background-color: white;
 }
 
 #item-nosotros {
   background-color: #407dbf;
 }
+#item-nosotros:hover {
+  background-color: white;
+}
 
 #item-contacto {
   background-color: #4cb58e;
+}
+#item-contacto:hover {
+  background-color: white;
 }
 
 .section-carousel {
   grid-area: 3/1/3/1;
   display: grid;
   height: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .section-carousel #carouselExampleSlidesOnly .carousel-inner {
   height: 100%;
