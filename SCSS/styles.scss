@@ -98,7 +98,6 @@ header {
 
 #item-inicio {
     background-color: #f58220;
-    font-weight: 900;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     &:hover {
@@ -158,13 +157,11 @@ header {
     #carouselExampleSlidesOnly {
 
         .carousel-inner {
-            // height: 70vh;
             height: 100%;
 
             .carousel-item {
 
                 height: 70vh;
-                // height: 100%;
 
             }
         }
@@ -366,4 +363,21 @@ footer section {
         text-align: center;
         margin: 0;
     }
+}
+
+
+
+
+
+//PAGE MENU
+#menu-header {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    section {
+        position: absolute;
+    }
+
 }

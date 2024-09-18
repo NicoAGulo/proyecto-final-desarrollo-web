@@ -76,7 +76,6 @@ header {
 
 #item-inicio {
   background-color: #f58220;
-  font-weight: 900;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #item-inicio:hover {
@@ -267,6 +266,16 @@ footer section p {
   width: 100%;
   text-align: center;
   margin: 0;
+}
+
+#menu-header {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+#menu-header section {
+  position: absolute;
 }
 
 /*# sourceMappingURL=styles.css.map */
