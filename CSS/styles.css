@@ -1,8 +1,16 @@
-html {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#index-html {
   scroll-snap-type: y mandatory;
 }
 
-header {
+#index-header {
   display: grid;
   height: 100vh;
   scroll-snap-align: start;
@@ -131,7 +139,7 @@ header {
   height: 70vh;
 }
 
-main {
+#index-main {
   display: grid;
   top: 0;
   height: 100vh;
@@ -216,7 +224,7 @@ main {
   transition: rotate(-360deg) 0.4s ease-in-out;
 }
 
-footer section {
+#index-footer section {
   background-image: linear-gradient(to bottom, #f58220 0vh, white 100vh);
   scroll-snap-align: start;
   height: 100vh;
@@ -227,55 +235,150 @@ footer section {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
 }
-footer section .div-iframe {
+#index-footer section .div-iframe {
   grid-area: 1/3/4/11;
 }
-footer section .div-iframe iframe {
+#index-footer section .div-iframe iframe {
   position: relative;
   width: 100%;
   height: auto;
 }
-footer section .div-info {
+#index-footer section .div-info {
   grid-area: 5/3/9/11;
   display: flex;
   justify-content: space-around;
 }
-footer section .div-info .span-bondi {
+#index-footer section .div-info .span-bondi {
   display: flex;
   position: relative;
   justify-content: space-around;
 }
-footer section .div-info .span-bondi ul {
+#index-footer section .div-info .span-bondi ul {
   display: block;
   height: 100%;
   padding: 0;
   text-align: center;
 }
-footer section .div-info .span-bondi ul li {
+#index-footer section .div-info .span-bondi ul li {
   text-align: center;
   list-style-type: none;
   height: auto;
 }
-footer section .div-info .span-bondi ul li p {
+#index-footer section .div-info .span-bondi ul li p {
   display: block;
   position: relative;
   width: 50%;
   height: auto;
 }
-footer section p {
+#index-footer section p {
   width: 100%;
   text-align: center;
   margin: 0;
 }
 
-#menu-header {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+#menu-body {
+  background-image: linear-gradient(to bottom, white 50vh, black 100vh);
+  background-repeat: no-repeat;
 }
-#menu-header section {
+
+#menu-header {
+  display: block;
+  flex-direction: row;
+}
+#menu-header .menu-section-logo {
+  height: 20vh;
+  position: relative;
+}
+#menu-header .menu-section-navbar {
+  height: 10vh;
+  position: relative;
+}
+
+#menu-main {
+  height: 70vh;
+  bottom: 0;
+}
+#menu-main h2 {
+  text-align: center;
+  padding-top: 1rem;
+  margin: 0;
+}
+
+#section-cards {
+  display: grid;
+  text-align: center;
+  height: 85%;
+  width: 100%;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  z-index: 0;
+}
+
+.div-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(97, 97, 97);
+  border-radius: 10%;
+  overflow: hidden;
+}
+.div-card p {
+  margin: 0;
+}
+.div-card img {
+  object-fit: cover;
+  height: 100%;
+}
+.div-card:hover, .div-card:active {
   position: absolute;
+  width: 100%;
+  height: 20%;
+}
+.div-card:hover img, .div-card:active img {
+  height: 100%;
+  width: 100%;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.div-milanesa {
+  grid-area: 2/2/4/5;
+}
+
+.div-hamburguesa {
+  grid-area: 5/2/7/5;
+}
+.div-hamburguesa:hover {
+  bottom: 50vh;
+  z-index: 999;
+}
+
+.div-churrasco {
+  grid-area: 8/2/10/5;
+}
+.div-churrasco:hover {
+  bottom: 2rem;
+  z-index: 999;
+}
+
+.div-baguette {
+  grid-area: 2/6/4/9;
+}
+
+.div-nuggets {
+  grid-area: 5/6/7/9;
+}
+
+.div-calzones {
+  grid-area: 8/6/10/9;
+  bottom: 0;
+}
+.div-calzones img {
+  height: 150%;
+  transform: rotate(90deg);
+}
+.div-calzones:hover {
+  bottom: 2rem;
+  z-index: 999;
 }
 
 /*# sourceMappingURL=styles.css.map */

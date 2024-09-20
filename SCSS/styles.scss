@@ -1,11 +1,11 @@
 @import "keyframes";
 @import "animations";
 
-html {
+#index-html {
     scroll-snap-type: y mandatory;
 }
 
-header {
+#index-header {
     display: grid;
     height: 100vh;
 
@@ -169,7 +169,7 @@ header {
 
 }
 
-main {
+#index-main {
     display: grid;
     top: 0;
     height: 100vh;
@@ -184,6 +184,7 @@ main {
 
 
     height: 100vh;
+
 
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -285,19 +286,7 @@ main {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-footer section {
+#index-footer section {
     background-image: linear-gradient(to bottom, #f58220 0vh, white 100vh);
     scroll-snap-align: start;
 
@@ -369,15 +358,137 @@ footer section {
 
 
 
-//PAGE MENU
-#menu-header {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
 
-    section {
-        position: absolute;
+
+
+
+
+
+
+
+//PAGE MENU
+
+#menu-body {
+    background-image: linear-gradient(to bottom, white 50vh, black 100vh);
+    background-repeat: no-repeat;
+}
+
+#menu-header {
+    display: block;
+    flex-direction: row;
+
+    .menu-section-logo {
+        height: 20vh;
+        position: relative;
     }
 
+    .menu-section-navbar {
+        height: 10vh;
+        position: relative;
+    }
+
+}
+
+#menu-main {
+
+    height: 70vh;
+    bottom: 0;
+
+    h2 {
+        text-align: center;
+        padding-top: 1rem;
+        margin: 0;
+    }
+}
+
+
+
+#section-cards {
+    display: grid;
+    text-align: center;
+    height: 85%;
+    width: 100%;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    z-index: 0;
+}
+
+.div-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(97, 97, 97);
+    border-radius: 10%;
+    overflow: hidden;
+
+    p {
+        margin: 0;
+    }
+
+    img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+
+    &:hover,
+    &:active {
+
+        position: absolute;
+        width: 100%;
+        height: 20%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+    }
+}
+
+.div-milanesa {
+    grid-area: 2/2/4/5;
+
+}
+
+.div-hamburguesa {
+    grid-area: 5/2/7/5;
+
+    &:hover {
+        bottom: 50vh;
+        z-index: 999;
+    }
+}
+
+.div-churrasco {
+    grid-area: 8/2/10/5;
+
+    &:hover {
+        bottom: 2rem;
+        z-index: 999;
+    }
+}
+
+.div-baguette {
+    grid-area: 2/6/4/9;
+}
+
+.div-nuggets {
+    grid-area: 5/6/7/9;
+}
+
+.div-calzones {
+    grid-area: 8/6/10/9;
+
+    img {
+        height: 150%;
+        transform: rotate(90deg);
+    }
+
+    &:hover {
+        bottom: 2rem;
+        z-index: 999;
+    }
+
+    bottom: 0;
 }
