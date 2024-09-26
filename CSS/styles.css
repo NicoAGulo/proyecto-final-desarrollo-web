@@ -370,7 +370,6 @@
 
 .div-calzones {
   grid-area: 8/6/10/9;
-  bottom: 0;
 }
 .div-calzones img {
   height: 150%;
@@ -412,6 +411,35 @@
   padding: 2rem;
   width: 30vh;
   height: 50vh;
+}
+
+#nosotros-body {
+  background-color: #a86615;
+}
+
+#nosotros-header h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
+  font-weight: 900;
+}
+
+#nosotros-main p {
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 2rem;
+  border-style: dotted;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+#nosotros-footer div img {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
