@@ -1,7 +1,7 @@
 @import "keyframes";
 @import "animations";
 
-#index-html {
+#index-body {
     scroll-snap-type: y mandatory;
 }
 
@@ -10,6 +10,19 @@
     height: 100vh;
 
     scroll-snap-align: start;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     grid-template-columns: 1fr;
