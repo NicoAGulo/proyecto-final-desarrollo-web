@@ -5,13 +5,18 @@
     scroll-snap-type: y mandatory;
 }
 
+h1 {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+}
+
+
 #index-header {
     display: grid;
     height: 100vh;
 
     scroll-snap-align: start;
-
-
 
 
 
@@ -326,34 +331,29 @@
     }
 
     .div-info {
-        grid-area: 5 / 3 / 9 / 11;
+        grid-area: 5 / 2 / 9 / 12;
         display: flex;
-
+        position: relative;
         justify-content: space-around;
 
         .span-bondi {
             display: flex;
             position: relative;
             justify-content: space-around;
-
+            flex-direction: column;
+            text-align: center;
 
             ul {
                 display: block;
                 height: 100%;
-                padding: 0;
                 text-align: center;
+                justify-content: center;
+                padding: 0;
+                list-style-type: none;
 
                 li {
                     text-align: center;
-                    list-style-type: none;
                     height: auto;
-
-                    p {
-                        display: block;
-                        position: relative;
-                        width: 50%;
-                        height: auto;
-                    }
                 }
             }
         }
@@ -361,11 +361,7 @@
 
 
 
-    p {
-        width: 100%;
-        text-align: center;
-        margin: 0;
-    }
+
 }
 
 
