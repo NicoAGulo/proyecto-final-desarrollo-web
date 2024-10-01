@@ -43,6 +43,11 @@ h1 {
 .section-logo .div-logo img {
   height: 30%;
 }
+.section-logo .div-logo #logo-centro {
+  display: block;
+  position: relative;
+  transition: transform 1s ease-in-out;
+}
 .section-logo .div-logo .logo-centro {
   grid-area: 1/2/2/3;
 }
@@ -149,7 +154,7 @@ h1 {
 .section-carousel #carouselExampleSlidesOnly .carousel-inner .carousel-item .d-block,
 .section-carousel #carouselExampleSlidesOnly .carousel-inner .carousel-item .w-100 {
   position: relative;
-  bottom: 50vh;
+  height: 50%;
 }
 
 #index-main {

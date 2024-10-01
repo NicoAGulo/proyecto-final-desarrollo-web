@@ -48,8 +48,17 @@ h1 {
 
         }
 
+
+        #logo-centro {
+            display: block;
+            position: relative;
+            transition: transform 1s ease-in-out;
+        }
+
         .logo-centro {
             grid-area: 1 / 2 / 2 / 3;
+
+
 
         }
 
@@ -177,7 +186,7 @@ h1 {
                 .d-block,
                 .w-100 {
                     position: relative;
-                    bottom: 50vh;
+                    height: 50%;
                 }
             }
         }
