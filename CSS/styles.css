@@ -6,7 +6,29 @@
     opacity: 1;
   }
 }
-#index-body {
+@media (min-width: 320px) {
+  /* Estilos a aplicar cuando el ancho de la pantalla es mayor o igual a 768px */
+  #eco-1,
+  #eco-2 {
+    visibility: hidden;
+  }
+}
+@media (min-width: 1000px) {
+  /* Estilos a aplicar cuando el ancho de la pantalla es mayor o igual a 768px */
+  #eco-1,
+  #eco-2 {
+    visibility: visible;
+  }
+}
+@media (min-width: 1300px) {
+  /* Estilos a aplicar cuando el ancho de la pantalla es mayor o igual a 768px */
+  #eco-1,
+  #eco-2 {
+    scale: 1.5;
+  }
+}
+#index-html {
+  overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
@@ -53,9 +75,11 @@ h1 {
 }
 .section-logo .div-logo .logo-eco-1 {
   grid-area: 1/1/2/2;
+  visibility: hidden;
 }
 .section-logo .div-logo .logo-eco-2 {
   grid-area: 1/3/2/4;
+  visibility: hidden;
 }
 
 .section-navbar {

@@ -1,0 +1,28 @@
+@import "mixins";
+
+@media (min-width: 320px) {
+
+    /* Estilos a aplicar cuando el ancho de la pantalla es mayor o igual a 768px */
+    #eco-1,
+    #eco-2 {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    /* Estilos a aplicar cuando el ancho de la pantalla es mayor o igual a 768px */
+    #eco-1,
+    #eco-2 {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 1300px) {
+
+    /* Estilos a aplicar cuando el ancho de la pantalla es mayor o igual a 768px */
+    #eco-1,
+    #eco-2 {
+        @include variacionLogosEco;
+    }
+}

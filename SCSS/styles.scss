@@ -1,7 +1,10 @@
 @import "keyframes";
 @import "animations";
+@import "media";
+@import "mixins";
 
-#index-body {
+#index-html {
+    overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
 
@@ -58,16 +61,16 @@ h1 {
         .logo-centro {
             grid-area: 1 / 2 / 2 / 3;
 
-
-
         }
 
         .logo-eco-1 {
             grid-area: 1 / 1 / 2 / 2;
+            visibility: hidden;
         }
 
         .logo-eco-2 {
-            grid-area: 1 / 3 / 2 / 4
+            grid-area: 1 / 3 / 2 / 4;
+            visibility: hidden;
         }
 
     }
