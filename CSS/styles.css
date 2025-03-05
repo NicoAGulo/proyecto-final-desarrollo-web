@@ -430,17 +430,19 @@ h1 {
 #novedades-main,
 #novedades-footer {
   height: 50vh;
-  width: 100%;
+  width: auto;
   text-align: center;
 }
 
 #novedades-header h2 {
   padding-top: 4rem;
-  font-size: 10px;
+  font-size: 100px;
 }
 
 #novedades-main {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   height: 100%;
   width: 100%;
 }
@@ -486,7 +488,8 @@ h1 {
 #contacto-header h2 {
   text-align: center;
   font-size: 2rem;
-  padding: 1rem;
+  margin: 1rem;
+  padding: 2rem;
   font-weight: 900;
   border-style: double;
 }
@@ -508,8 +511,11 @@ h1 {
 }
 #contacto-main form label input {
   display: block;
-  width: 50%;
+  width: 100%;
   padding: 0.5rem;
+}
+#contacto-main form .input-asunto {
+  height: 80%;
 }
 
 /*# sourceMappingURL=styles.css.map */
