@@ -448,10 +448,12 @@ h1 {
 }
 .div-milanesa:hover:active {
   transition: 0.1s ease-in-out;
+  width: 100%;
   position: absolute;
-  width: 90vh;
-  height: 60vh;
-  z-index: 3000;
+}
+.div-milanesa:hover:active img {
+  width: 100%;
+  max-height: 60vh;
 }
 
 .div-hamburguesa:hover img {
@@ -460,10 +462,12 @@ h1 {
 }
 .div-hamburguesa:hover:active {
   transition: 0.1s ease-in-out;
+  width: 100%;
   position: absolute;
-  width: 90vh;
-  height: 60vh;
-  z-index: 3000;
+}
+.div-hamburguesa:hover:active img {
+  width: 100%;
+  left: 0;
 }
 
 .div-churrasco:hover img {
@@ -472,10 +476,12 @@ h1 {
 }
 .div-churrasco:hover:active {
   transition: 0.1s ease-in-out;
+  width: 100%;
   position: absolute;
-  width: 90vh;
-  height: 60vh;
-  z-index: 3000;
+}
+.div-churrasco:hover:active img {
+  width: 100%;
+  left: 0;
 }
 
 .div-baguette:hover img {
@@ -484,10 +490,12 @@ h1 {
 }
 .div-baguette:hover:active {
   transition: 0.1s ease-in-out;
+  width: 100%;
   position: absolute;
-  width: 90vh;
-  height: 60vh;
-  z-index: 3000;
+}
+.div-baguette:hover:active img {
+  width: 100%;
+  left: 0;
 }
 
 .div-nuggets:hover img {
@@ -496,28 +504,12 @@ h1 {
 }
 .div-nuggets:hover:active {
   transition: 0.1s ease-in-out;
+  width: 100%;
   position: absolute;
-  width: 90vh;
-  height: 60vh;
-  z-index: 3000;
 }
-
-.div-calzones:hover img {
-  opacity: 100%;
-  z-index: 1200;
-}
-.div-calzones:hover:active {
-  transition: 0.1s ease-in-out;
-  position: absolute;
-  width: 90vh;
-  height: 60vh;
-  z-index: 3000;
-}
-.div-calzones img {
-  height: 85rem;
-  rotate: 90deg;
-  scale: 0.65;
-  transform: translateY(-150px);
+.div-nuggets:hover:active img {
+  width: 100%;
+  left: 0;
 }
 
 #novedades-body {

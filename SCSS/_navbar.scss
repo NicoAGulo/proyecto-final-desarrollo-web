@@ -1,0 +1,91 @@
+.section-navbar {
+    display: grid;
+    grid-area: 2 / 1 / 2 / 1;
+
+    .navbar {
+        justify-content: space-around;
+        padding: 0;
+
+        .lista-navbar {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            width: 100%;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+
+            
+            
+            li {
+                display: grid;
+                border-color: black;
+                border-radius: 2px 40%;
+                border-style: outset;
+                height: 3rem;
+                align-items: center;
+                text-align: center;
+                width: 15%;
+                z-index: 999;                
+                a {
+                    display: flex;
+                    text-decoration: none;
+                    color: black;
+                    align-items: center;
+                    justify-content: center;
+                    font-size:80%;
+                    height: 100%;                    
+                }
+            }
+        }
+    }
+}
+
+#item-inicio {
+    background-color: #f58220;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    &:hover {
+        background-color: white;
+    }
+}
+
+#item-menu {
+    background-color: #a86615;
+
+    &:hover {
+        background-color: white;
+    }
+}
+
+#item-delivery {
+    background-color: #aa2e31;
+
+    &:hover {
+        background-color: white;
+    }
+}
+
+#item-novedades {
+    background-color: #d7d1c4;
+
+    &:hover {
+        background-color: white;
+    }
+}
+
+#item-nosotros {
+    background-color: #407dbf;
+
+    &:hover {
+        background-color: white;
+    }
+}
+
+#item-contacto {
+    background-color: #4cb58e;
+
+    &:hover {
+        background-color: white;
+    }
+}

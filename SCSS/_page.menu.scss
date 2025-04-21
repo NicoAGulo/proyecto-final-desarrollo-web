@@ -1,0 +1,175 @@
+#menu-body {
+    background-image: linear-gradient(to bottom, white 50vh, black 100vh);
+    background-repeat: no-repeat;
+}
+
+#menu-header {
+    display: block;
+    flex-direction: row;
+
+    .menu-section-logo {
+        height: 20vh;
+        position: relative;
+    }
+
+    .menu-section-navbar {
+        height: 10vh;
+        position: relative;
+    }
+
+}
+
+#menu-main {
+
+    height: 70vh;
+    bottom: 0;
+
+    h2 {
+        text-align: center;
+        padding-top: 1rem;
+        margin: 0;
+    }
+}
+
+
+
+#section-cards {
+    display: flex;
+    position: static;
+    text-align: center;
+    height: 92%;
+    overflow: hidden;
+    width:100%;
+
+    h5{
+        position: absolute;
+        z-index: 1000;
+        writing-mode:sideways-rl;
+        font-size: 3rem;
+        text-decoration: overline;
+        color: white;
+    }
+}
+
+.div-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(97, 97, 97);
+    border-radius: 10%;
+    overflow: hidden;
+    width: 1fr;
+    background-color: black;
+    cursor:pointer;
+        
+    
+    
+    p {
+        margin: 0;
+    }
+    
+    img {
+        height: 100%;
+        opacity: 50%;
+    }
+}
+
+.div-milanesa {
+    &:hover{
+        img{
+            opacity: 100%;
+            z-index: 1200;
+        }
+
+        &:active{
+            transition: 0.1s ease-in-out;
+            width: 100%;
+            position: absolute;
+
+            img{
+                width: 100%;
+                max-height: 60vh;
+            }
+        }
+    }
+}
+
+.div-hamburguesa {
+    &:hover{
+        img{
+            opacity: 100%;
+            z-index: 1200;
+        }
+
+        &:active{
+            transition: 0.1s ease-in-out;
+            width: 100%;
+            position: absolute;
+
+            img{
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+}
+
+.div-churrasco {
+    &:hover{
+        img{
+            opacity: 100%;
+            z-index: 1200;
+        }
+
+        &:active{
+            transition: 0.1s ease-in-out;
+            width: 100%;
+            position: absolute;
+
+            img{
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+}
+
+.div-baguette {
+    &:hover{
+        img{
+            opacity: 100%;
+            z-index: 1200;
+        }
+
+        &:active{
+            transition: 0.1s ease-in-out;
+            width: 100%;
+            position: absolute;
+
+            img{
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+}
+
+.div-nuggets {
+    &:hover{
+        img{
+            opacity: 100%;
+            z-index: 1200;
+        }
+
+        &:active{
+            transition: 0.1s ease-in-out;
+            width: 100%;
+            position: absolute;
+
+            img{
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+}
