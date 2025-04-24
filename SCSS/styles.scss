@@ -1,7 +1,3 @@
-@import "keyframes";
-@import "animations";
-@import "media";
-@import "mixins";
 
 @import "index";
 @import "logo";
@@ -9,5 +5,11 @@
 
 @import "page-inicio";
 @import "page-menu";
+@import "page-nosotros";
 @import "page-novedades";
+
+@import "keyframes";
+@import "animations";
+@import "media";
+@import "mixins";
 @import "media-queries";

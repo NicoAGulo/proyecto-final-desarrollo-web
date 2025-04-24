@@ -1,6 +1,7 @@
 @import "mixins";
+@import "page-inicio";
 
-@media (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 699px) {
 
     /* Estilos a aplicar cuando el ancho de la pantalla es mayor o igual a 768px */
     #eco-1,
@@ -9,12 +10,28 @@
     }
 }
 
-@media (min-width: 1000px) {
+@media screen and (min-width: 700px) and (max-width: 1299px){
 
     /* Estilos a aplicar cuando el ancho de la pantalla es mayor o igual a 768px */
     #eco-1,
     #eco-2 {
         visibility: visible;
+    }
+
+    .menu-media{
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0%;
+        padding:0%;
+    }
+
+    .div-simple{
+        height: 40%;
+        width: 40%;
     }
 }
 
@@ -23,6 +40,38 @@
     /* Estilos a aplicar cuando el ancho de la pantalla es mayor o igual a 768px */
     #eco-1,
     #eco-2 {
-        @include variacionLogosEco;
+        @include variacionlogosEco;
+    }
+
+    .menu-media{
+        display: flex;
+        position: relative;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        left: 20%;
+        width: 60%;
+
+        margin: 0%;
+        padding:0%;
+    }
+
+    .div-simple{
+        height: 800px;
+        width: 400px;
+    }
+
+    .div-2{
+        &:hover,&:active{
+            #logo-instagram-hover{
+                transform: scale(1);
+                transition: 0.2s ease-in-out;
+                visibility: visible;
+            }
+            #logo-instagram{
+                visibility: hidden;
+            }
+        }
     }
 }

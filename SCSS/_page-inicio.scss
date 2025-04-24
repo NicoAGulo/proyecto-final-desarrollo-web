@@ -106,6 +106,7 @@
 .div2 {
     grid-area: 3 / 1 / 5 / 4;
     background-color: #f66603;
+    overflow: hidden;
 
     #logo-instagram-hover{
         visibility: hidden;
@@ -123,6 +124,7 @@
             transform: scale(1);
             transition: 0.2s ease-in-out;
             visibility: visible;
+            
         }
         #logo-instagram{
             visibility: hidden;
