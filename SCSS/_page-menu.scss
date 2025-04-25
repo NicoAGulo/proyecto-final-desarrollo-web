@@ -1,5 +1,5 @@
 #menu-body {
-    background-image: linear-gradient(to bottom, white 50vh, black 100vh);
+    background-image: linear-gradient(to bottom, white 50vh, rgb(0, 0, 0) 100vh);
     background-repeat: no-repeat;
 }
 
@@ -20,10 +20,9 @@
 }
 
 #menu-main {
-
-    height: 70vh;
-    bottom: 0;
-
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     h2 {
         text-align: center;
         padding-top: 1rem;
@@ -37,139 +36,212 @@
     display: flex;
     position: static;
     text-align: center;
-    height: 92%;
-    overflow: hidden;
-    width:100%;
-
-    h5{
-        position: absolute;
-        z-index: 1000;
-        writing-mode:sideways-rl;
-        font-size: 3rem;
-        text-decoration: overline;
-        color: white;
-    }
-}
-
-.div-card {
-    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(97, 97, 97);
-    border-radius: 10%;
+    height: 65vh;
     overflow: hidden;
-    width: 1fr;
-    background-color: black;
-    cursor:pointer;
+    width:95vw;
+    
+    a{
+        display: flex;
         
-    
-    
-    p {
-        margin: 0;
-    }
-    
-    img {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0%;
         height: 100%;
-        opacity: 50%;
-    }
-}
+        padding: 0.2rem;
+        width: 6rem;
 
-.div-milanesa {
-    &:hover{
-        img{
-            opacity: 100%;
-            z-index: 1200;
+        .div-card {
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            background-color: rgb(97, 97, 97);
+            overflow: hidden;
+            background-color: black;
+            cursor:pointer;
+
+            h5{
+                position: absolute;
+                z-index: 1000;
+                writing-mode:sideways-rl;
+                font-size: 3rem;
+                text-decoration: overline;
+                color: white;
+            }
+            
+            p {
+                margin: 0;
+            }
+            
+            img {
+                position:relative;
+                width: 120rem;
+                opacity: 50%;
+            }
         }
-
-        &:active{
-            transition: 0.1s ease-in-out;
-            width: 100%;
-            position: absolute;
-
-            img{
-                width: 100%;
-                max-height: 60vh;
+        .div-milanesa {
+            &:hover{
+                img{
+                    opacity: 100%;
+                    z-index: 1200;
+                }
+        
+                &:active{
+                    transition: 0.1s ease-in-out;
+                    width: 100%;
+                    position: absolute;
+        
+                    img{
+                        width: 100%;
+                        max-height: 60vh;
+                    }
+                }
+            }
+        }
+        
+        .div-hamburguesa {
+            &:hover{
+                img{
+                    opacity: 100%;
+                    z-index: 1200;
+                }
+        
+                &:active{
+                    transition: 0.1s ease-in-out;
+                    width: 100%;
+                    position: absolute;
+        
+                    img{
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        
+        .div-churrasco {
+            &:hover{
+                img{
+                    opacity: 100%;
+                    z-index: 1200;
+                }
+        
+                &:active{
+                    transition: 0.1s ease-in-out;
+                    width: 100%;
+                    position: absolute;
+        
+                    img{
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        
+        .div-baguette {
+            &:hover{
+                img{
+                    opacity: 100%;
+                    z-index: 1200;
+                }
+        
+                &:active{
+                    transition: 0.1s ease-in-out;
+                    width: 100%;
+                    position: absolute;
+        
+                    img{
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        
+        .div-nuggets {
+            &:hover{
+                img{
+                    opacity: 100%;
+                    z-index: 1200;
+                }
+        
+                &:active{
+                    transition: 0.1s ease-in-out;
+                    width: 100%;
+                    position: absolute;
+        
+                    img{
+                        width: 100%;
+                        left: 0;
+                    }
+                }
             }
         }
     }
 }
 
-.div-hamburguesa {
-    &:hover{
-        img{
-            opacity: 100%;
-            z-index: 1200;
+.div-precios{
+    display: block;
+    position: relative;
+    color: white;
+    height: 100vh;
+    span{
+        h6{
+            font-style: italic;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 5rem;
         }
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            top: 60%;
+            position: relative;
+            align-items: center;
+            justify-content: center;
 
-        &:active{
-            transition: 0.1s ease-in-out;
-            width: 100%;
-            position: absolute;
-
-            img{
-                width: 100%;
-                left: 0;
-            }
-        }
-    }
-}
-
-.div-churrasco {
-    &:hover{
-        img{
-            opacity: 100%;
-            z-index: 1200;
-        }
-
-        &:active{
-            transition: 0.1s ease-in-out;
-            width: 100%;
-            position: absolute;
-
-            img{
-                width: 100%;
-                left: 0;
-            }
+            text-transform:uppercase;
+            background-color: rgba(0, 0, 0, 0.678);
+            background-size: cover;
+            
         }
     }
 }
 
-.div-baguette {
-    &:hover{
-        img{
-            opacity: 100%;
-            z-index: 1200;
-        }
-
-        &:active{
-            transition: 0.1s ease-in-out;
-            width: 100%;
-            position: absolute;
-
-            img{
-                width: 100%;
-                left: 0;
-            }
-        }
-    }
+#precio-milanesa{
+    background-image:url("../img/comidas/sandwich-mila-completo.webp");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size:100vh;
+}
+#precio-hamburguesa{
+    background-image:url("../img/comidas/hamburguesa-completa.webp");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size:100vh;
+}
+#precio-churrasco{
+    background-image:url("../img/comidas/combo-churrasco.webp");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size:100vh;
+}
+#precio-baguette{
+    background-image:url("../img/comidas/sandwich-fiambre-completo.webp");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size:100vh;
+}
+#precio-nuggets{
+    background-image:url("../img/comidas/nuggets-fritas.webp");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size:100vh;
 }
 
-.div-nuggets {
-    &:hover{
-        img{
-            opacity: 100%;
-            z-index: 1200;
-        }
-
-        &:active{
-            transition: 0.1s ease-in-out;
-            width: 100%;
-            position: absolute;
-
-            img{
-                width: 100%;
-                left: 0;
-            }
-        }
-    }
-}
